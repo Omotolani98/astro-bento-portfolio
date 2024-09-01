@@ -19,7 +19,7 @@ const { title, description, page, slug, frontmatter } = Astro.props;
 const image =
   page === "travel"
     ? `${Astro.url.origin}/globe_preview.webp"`
-    : `${Astro.url.origin}/og-image.png`;
+    : `${Astro.url.origin}/doye-preview.png`;
 
 const schema =
   page !== "blog"
@@ -32,7 +32,7 @@ const schema =
           "https://www.linkedin.com/in/gianmarco-cavallo",
           "https://github.com/Ladvace",
         ],
-        image: "https://gianmarco.xyz/og-image.png",
+        image: "",
         jobTitle: "Freelance Frontend Developer",
         worksFor: {
           "@type": "Organization",
@@ -57,7 +57,7 @@ const schema =
         },
         headline: frontmatter?.title || title,
         description: frontmatter?.description || title,
-        image: "https://gianmarco.xyz/og-image.png", //TODO: dynamic
+        image: "", //TODO: dynamic
         author: {
           "@type": "Person",
           name: "Gianmarco",
@@ -72,7 +72,7 @@ const schema =
           name: "Gianmarco",
           logo: {
             "@type": "ImageObject",
-            url: "https://gianmarco.xyz/og-image.png",
+            url: "",
           },
         },
         datePublished: frontmatter?.pubDate || new Date().toISOString(),
@@ -97,7 +97,7 @@ const schema =
     <meta property="og:url" content={Astro.url.origin} />
     <meta
       property="og:image"
-      content={image || "https://gianmarco.xyz/og-image.png"}
+      content={image || ""}
     />
     <!-- Basic Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -105,7 +105,7 @@ const schema =
     <meta name="twitter:description" content={description} />
     <meta
       name="twitter:image"
-      content={image || "https://gianmarco.xyz/og-image.png"}
+      content={image || ""}
     />
 
     <link rel="preconnect" href="https://cdn.fontshare.com" />
