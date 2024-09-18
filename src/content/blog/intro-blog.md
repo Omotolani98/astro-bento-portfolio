@@ -1,3 +1,11 @@
+---
+layout: ../../layouts/LayoutBlogPost.astro
+title: "Welcome to That IT Guy: Navigating the IT World Together"
+description: "this is an introduction to That IT Guy World"
+pubDate: 2024-09-18
+category: "intro"
+---
+
 # Welcome to That IT Guy: Navigating the IT World Together
 
 ## Introduction
