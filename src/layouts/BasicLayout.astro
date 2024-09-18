@@ -26,26 +26,26 @@ const schema =
     ? {
         "@context": "http://schema.org",
         "@type": "Person",
-        name: "Gianmarco",
-        url: "https://gianmarco.xyz",
+        name: "Omotolani",
+        url: "https://omotolani.dev",
         sameAs: [
-          "https://www.linkedin.com/in/gianmarco-cavallo",
-          "https://github.com/Ladvace",
+          "https://www.linkedin.com/in/emmanuel-olatunde-519808194/",
+          "https://github.com/Omotolani98",
         ],
         image: "",
-        jobTitle: "Freelance Frontend Developer",
+        jobTitle: "Freelance Software Engineer",
         worksFor: {
           "@type": "Organization",
           name: "Self-Employed",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Italy",
-            addressCountry: "IT",
+            addressLocality: "Nigeria",
+            addressCountry: "NG",
           },
         },
         nationality: {
           "@type": "Country",
-          name: "Italy",
+          name: "Nigeria",
         },
       }
     : {
@@ -53,23 +53,23 @@ const schema =
         "@type": "BlogPosting",
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `https://gianmarco.xyz/blog/${slug}`,
+          "@id": `https://omotolani.dev/blog/${slug}`,
         },
         headline: frontmatter?.title || title,
         description: frontmatter?.description || title,
         image: "", //TODO: dynamic
         author: {
           "@type": "Person",
-          name: "Gianmarco",
-          url: "https://gianmarco.xyz",
+          name: "Omotolani",
+          url: "https://omotolani.dev",
           sameAs: [
-            "https://www.linkedin.com/in/gianmarco-cavallo",
-            "https://github.com/Ladvace",
+            "https://www.linkedin.com/in/emmanuel-olatunde-519808194/",
+            "https://github.com/Omotolani98",
           ],
         },
         publisher: {
           "@type": "Organization",
-          name: "Gianmarco",
+          name: "Omotolani",
           logo: {
             "@type": "ImageObject",
             url: "",
