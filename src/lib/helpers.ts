@@ -32,6 +32,11 @@ export function formatTimeForItaly(date: Date): string {
 }
 
 export function formatDate(date: Date): string {
+  console.log(date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }))
   return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
