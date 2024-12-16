@@ -19,33 +19,33 @@ const { title, description, page, slug, frontmatter } = Astro.props;
 const image =
   page === "travel"
     ? `${Astro.url.origin}/globe_preview.webp"`
-    : `${Astro.url.origin}/og-image.png`;
+    : `${Astro.url.origin}/doye-preview.png`;
 
 const schema =
   page !== "blog"
     ? {
         "@context": "http://schema.org",
         "@type": "Person",
-        name: "Gianmarco",
-        url: "https://gianmarco.xyz",
+        name: "Omotolani",
+        url: "https://omotolani.dev",
         sameAs: [
-          "https://www.linkedin.com/in/gianmarco-cavallo",
-          "https://github.com/Ladvace",
+          "https://www.linkedin.com/in/emmanuel-olatunde-519808194/",
+          "https://github.com/Omotolani98",
         ],
-        image: "https://gianmarco.xyz/og-image.png",
-        jobTitle: "Freelance Frontend Developer",
+        image: "",
+        jobTitle: "Freelance Software Engineer",
         worksFor: {
           "@type": "Organization",
           name: "Self-Employed",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Italy",
-            addressCountry: "IT",
+            addressLocality: "Nigeria",
+            addressCountry: "NG",
           },
         },
         nationality: {
           "@type": "Country",
-          name: "Italy",
+          name: "Nigeria",
         },
       }
     : {
@@ -53,26 +53,26 @@ const schema =
         "@type": "BlogPosting",
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `https://gianmarco.xyz/blog/${slug}`,
+          "@id": `https://omotolani.dev/blog/${slug}`,
         },
         headline: frontmatter?.title || title,
         description: frontmatter?.description || title,
-        image: "https://gianmarco.xyz/og-image.png", //TODO: dynamic
+        image: "", //TODO: dynamic
         author: {
           "@type": "Person",
-          name: "Gianmarco",
-          url: "https://gianmarco.xyz",
+          name: "Omotolani",
+          url: "https://omotolani.dev",
           sameAs: [
-            "https://www.linkedin.com/in/gianmarco-cavallo",
-            "https://github.com/Ladvace",
+            "https://www.linkedin.com/in/emmanuel-olatunde-519808194/",
+            "https://github.com/Omotolani98",
           ],
         },
         publisher: {
           "@type": "Organization",
-          name: "Gianmarco",
+          name: "Omotolani",
           logo: {
             "@type": "ImageObject",
-            url: "https://gianmarco.xyz/og-image.png",
+            url: "",
           },
         },
         datePublished: frontmatter?.pubDate || new Date().toISOString(),
@@ -97,7 +97,7 @@ const schema =
     <meta property="og:url" content={Astro.url.origin} />
     <meta
       property="og:image"
-      content={image || "https://gianmarco.xyz/og-image.png"}
+      content={image || ""}
     />
     <!-- Basic Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -105,7 +105,7 @@ const schema =
     <meta name="twitter:description" content={description} />
     <meta
       name="twitter:image"
-      content={image || "https://gianmarco.xyz/og-image.png"}
+      content={image || ""}
     />
 
     <link rel="preconnect" href="https://cdn.fontshare.com" />
