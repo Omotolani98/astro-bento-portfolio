@@ -2,7 +2,7 @@
 layout: ../../layouts/LayoutBlogPost.astro
 title: "Setting Up Tailscale VPN on a Home Server"
 description: "A simple guide to setting up Tailscale VPN to home servers in LAN environment"
-pubDate: 2024-09-18
+pubDate: 2024-12-16
 category: "tutorial"
 ---
 # [![Tailscale Banner](https://via.placeholder.com/1000x300P)](https://tailscale.com)
