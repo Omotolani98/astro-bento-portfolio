@@ -5,7 +5,7 @@ description: "A simple guide to setting up Tailscale VPN to home servers in LAN 
 pubDate: 2024-12-16
 category: "tutorial"
 ---
-# [![Tailscale Banner](https://via.placeholder.com/1000x300P)](https://tailscale.com)
+# [![Tailscale Banner](/tailscale.png)](https://tailscale.com)
 
 # Setting Up Tailscale VPN on a Home Server
 
@@ -41,7 +41,6 @@ Install Tailscale on your home server with the following commands:
 1. **Update Package Lists**:
    ```bash
    sudo apt update
-   ```
 2. **Install Tailscale**:
    ```bash
    curl -fsSL https://tailscale.com/install.sh | sh
@@ -59,7 +58,7 @@ Install Tailscale on your home server with the following commands:
 1. Start Tailscale and authenticate:
    ```bash
    sudo tailscale up
-   ```
+
 2. **Log In**:
    - After running the command, you'll be prompted to open a URL in your browser to log in to your Tailscale account.
    - Once logged in, your server will join your Tailscale network.
@@ -69,15 +68,14 @@ Install Tailscale on your home server with the following commands:
 ## Step 3: Verify Connectivity
 
 1. **Get Your Tailscale IP**:
-   ```bash
+   ```bash 
    tailscale ip
-   ```
-   This will return an IP in the `100.x.x.x` range, which is the private Tailscale network IP.
+
+This will return an IP in the `100.x.x.x` range, which is the private Tailscale network IP.
 
 2. **Check Connection Status**:
    ```bash
    tailscale status
-   ```
 
 ---
 
